@@ -1,6 +1,6 @@
 % Section 1 - Containers
 % Roberto Masocco <roberto.masocco@uniroma2.it>
-% June 12, 2025
+% June 11, 2026
 
 % ### Containers ###
 \section{Containers}
@@ -9,6 +9,7 @@
 % --- Why containers? ---
 \begin{frame}{Why containers?}
 	\begin{exampleblock}{Example: Packaging applications}
+    \justifying
 		Suppose you are ready to distribute your new application:
 		\begin{itemize}
 			\item you need to be sure that it is compatible with all the \textbf{platforms} you chose to support;
@@ -19,6 +20,7 @@
 \end{frame}
 \begin{frame}{Why containers?}
 	\begin{exampleblock}{Example: Isolating applications}
+    \justifying
 		Suppose you are deploying applications on a server:
 		\begin{itemize}
 			\item you want to define \textbf{resource quotas} and \textbf{permissions} for each;
@@ -29,6 +31,7 @@
 \end{frame}
 \begin{frame}{Why containers?}
 	\begin{exampleblock}{Example: Replicating environments}
+    \justifying
 		Suppose you are developing applications for a specific system (maybe with a different architecture):
 		\begin{itemize}
 			\item you want to have a \textbf{software copy} of such system without having to carry it with you;
@@ -41,6 +44,7 @@
 \begin{frame}{Why containers?}
 	\begin{columns}
 		\column{.5\textwidth}
+    \justifying
 		A possible solution to many of the previous situations could be a set of \textbg{virtual machines}.\\
 		However, virtual machines are \textbg{slow}, hypervisors take up \textbg{system resources} and guest kernels must always be \textbg{tweaked}.\\
 		\bigskip
@@ -64,6 +68,7 @@
 \begin{frame}{Containers in the Linux kernel}
 	\begin{columns}
 		\column{.5\textwidth}
+    \justifying
 		Support for containers was added to the Linux kernel with a set of \textbg{features} starting from kernel 2.6 (2003), mainly:
 		\begin{itemize}
 			\item \textbg{control groups} (\texttt{cgroups}): defining different resource usage policies for groups of processes;
